@@ -4,6 +4,8 @@ import Navbar from './components/Navbar/Navbar'
 import ProjectCard from './components/ProjectCard/ProjectCard'
 import SkillCard from './components/SkillCard/SkillCard'
 import ContactForm from './components/ContactForm/ContactForm'
+import GitHubStats from './components/GitHubStats/GitHubStats'
+import Hero from './components/Hero/Hero'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,7 +18,16 @@ function App() {
   return (
     <>
       <Navbar/>
+      {/* --- 2. Add the Hero Component Here! --- */}
+      <Hero/>
       <main style={{ padding: '40px 5%', minHeight: '60vh', maxWidth: '1200px', margin: '0 auto' }}>
+        {/* --- GITHUB STATS SECTION --- */}
+                <h2 style={{ textAlign: 'center', marginBottom: '30px' }}>GitHub Profile</h2>
+                
+                {/* Notice how we wrap it in a div to easily control its layout */}
+                <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '60px' }}>
+                    <GitHubStats username="soumik03" /> {/* Replace with your username! */}
+                </div>
                 {/*SKILLS SECTION*/}
                 <h2 style={{ textAlign: 'center', marginBottom: '30px' }}>My Skills</h2>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '20px', marginBottom: '60px' }}>
