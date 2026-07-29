@@ -29,3 +29,18 @@
   display: flex;
   flex-direction: column;
 }
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* This adds the space between tags! */
+    margin: 10px 0;
+}
+
+.tag {
+    background: #e0e7ff; /* Soft blue background */
+    color: #4338ca;      /* Dark blue text */
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
