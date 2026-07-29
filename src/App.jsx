@@ -3,6 +3,7 @@ import Footer from './components/Footer/Footer'
 import Navbar from './components/Navbar/Navbar'
 import ProjectCard from './components/ProjectCard/ProjectCard'
 import SkillCard from './components/SkillCard/SkillCard'
+import ContactForm from './components/ContactForm/ContactForm'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -35,9 +36,12 @@ function App() {
                       tech={project.tech}
                       />
 
+
                     ))}
                   </div>
-
+                   {/*CONTACTS SECTION*/}
+                <h2 style={{ textAlign: 'center', marginBottom: '30px' }}>Get in Touch</h2>
+                <ContactForm/>
       </main>
      <Footer/>
     </>
