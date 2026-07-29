@@ -1,0 +1,57 @@
+/*src/index.css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary: #1B4F72;
+    --accent: #F18F01;
+    --text: #2C3E50;
+    --light: #F4F6F8;
+    --white: #FFFFFF;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body {
+    font-family: var(--font-main);
+    color: var(--text);
+    line-height: 1.6;
+    background-color: var(--white);
+}
+
+/* BUTTON */
+
+.btn {
+display: inline-block;
+padding: 12px 28px;
+border-radius: 8px;
+text-decoration: none;
+font-weight: 600;
+font-size: 1rem;
+cursor: pointer;
+border: 2px solid transparent;
+transition: all 0.3s ease;
+}
+
+.btn-primary {
+background: var(--accent);
+color: var(--white);
+}
+
+.btn-primary:hover {
+background: transparent;
+color: var(--accent);
+border-color: var(--accent);
+}
+
+.btn-secondary {
+background: transparent;
+color: var(--white);
+border-color: var(--white);
+}
+
+.btn-secondary:hover {
+background: var(--white);
+color: var(--primary);
+}
