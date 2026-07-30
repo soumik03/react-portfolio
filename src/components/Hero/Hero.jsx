@@ -1,16 +1,26 @@
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Hero.css';
 
+function getGreeting() {
+    const hour = new Date().getHours();
+    if (hour < 12) return 'Good Morning';
+    if (hour < 17) return 'Good Afternoon';
+    return 'Good Evening';
+}
+
 function Hero() {
+    const greeting = getGreeting();
+
     return (
         <section className="hero-section">
             <div className="hero-content">
-                {/* Notice we use className instead of class in React! */}
-                <h1>Hi, I'm <span className="highlight">Soumik Datta</span> 👋</h1>
+                <h1>{greeting}, I'm <span className="highlight">Soumik Datta</span> 👋</h1>
                 <p className="tagline">I build beautiful, fast, accessible websites.</p>
                 
                 <div className="hero-buttons">
-                    <a href="#projects" className="btn btn-primary">View My Work</a>
-                    <a href="#contact" className="btn btn-secondary">Contact Me</a>
+                    <Link to="/projects" className="btn btn-primary">View My Work</Link>
+                    <Link to="/contact" className="btn btn-secondary">Contact Me</Link>
                 </div>
             </div>
         </section>

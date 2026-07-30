@@ -1,16 +1,21 @@
 /* src/components/Navbar/Navbar.css */
 
 .site-header {
-position: sticky;
-top: 0;
-z-index: 1000;
-background: var(--primary);
-transition: background 0.3s ease, box-shadow 0.3s ease;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--primary);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .navbar {
 display: flex;
-justify-content: space-between;
+justify-content: space-between; 
 align-items: center;
 padding: 20px 5%;
 }
